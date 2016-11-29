@@ -1,0 +1,43 @@
+{
+  "name": "ghoneycutt-stackdriver",
+  "version": "0.1.0",
+  "author": "ghoneycutt",
+  "summary": "Manages Stackdriver",
+  "license": "Apache-2.0",
+  "source": "git://github.com/ghoneycutt/puppet-module-stackdriver.git",
+  "project_page": "https://github.com/ghoneycutt/puppet-module-stackdriver",
+  "issues_url": "https://github.com/ghoneycutt/puppet-module-stackdriver/issues",
+  "description": "Manage Stackdriver",
+  "requirements": [
+    {"name":"puppet","version_requirement":">= 3.0.0 < 5.0.0"}
+  ],
+  "dependencies": [
+    {"name":"puppetlabs/stdlib","version_requirement":">= 4.6.0 < 6.0.0"}
+  ],
+  "operatingsystem_support": [
+    {
+      "operatingsystem": "RedHat",
+      "operatingsystemrelease": [
+        "6"
+      ]
+    },
+    {
+      "operatingsystem": "CentOS",
+      "operatingsystemrelease": [
+        "6"
+      ]
+    },
+    {
+      "operatingsystem": "OracleLinux",
+      "operatingsystemrelease": [
+        "6"
+      ]
+    },
+    {
+      "operatingsystem": "Scientific",
+      "operatingsystemrelease": [
+        "6"
+      ]
+    }
+  ]
+}
