@@ -6,6 +6,7 @@ class stackdriver (
   $manage_repo = true,
   $baseurl     = undef,
   $gpgkey      = 'https://app.stackdriver.com/RPM-GPG-KEY-stackdriver',
+  $gpgcheck    = true,
 ) {
 
   if $baseurl == undef {
@@ -30,7 +31,7 @@ class stackdriver (
       descr    => 'Stackdriver Agent Repository',
       baseurl  => $baseurl_real,
       enabled  => true,
-      gpgcheck => true,
+      gpgcheck => $gpgcheck,
       gpgkey   => $gpgkey,
       before   => [
         Package['stackdriver-agent'],
