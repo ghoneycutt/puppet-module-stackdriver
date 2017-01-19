@@ -5,8 +5,8 @@
 class stackdriver (
   $manage_repo = true,
   $baseurl     = undef,
-  $gpgkey      = 'https://app.stackdriver.com/RPM-GPG-KEY-stackdriver',
   $gpgcheck    = true,
+  $gpgkey      = 'https://app.stackdriver.com/RPM-GPG-KEY-stackdriver',
 ) {
 
   if $baseurl == undef {
@@ -23,6 +23,7 @@ class stackdriver (
 
   validate_bool($manage_repo_real)
   validate_string($baseurl_real)
+  validate_bool($gpgcheck)
   validate_string($gpgkey)
 
   if $manage_repo_real == true {
